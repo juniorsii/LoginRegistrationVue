@@ -1,0 +1,249 @@
+html,
+body,
+h2 {
+    font-family: "usual", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding-inline-start: 0px!important;
+}
+
+.logo {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.align {
+    text-align: center!important;
+}
+
+.wrap-login100 {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.container-login100 {
+    /* width: 100%; */
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.alert {
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    border: 2px solid #f7f7f7;
+    box-shadow: 0 2px 15px 0 rgb(120 135 182 / 27%);
+    padding: 15px 5px;
+    border-radius: 5px;
+}
+
+.btn {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    padding: 10px 35px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    background: #1161ee;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    width: 100%;
+    min-width: 60px;
+}
+
+.btn:hover {
+    background-color: #6299f8;
+}
+
+.link,
+.float {
+    text-decoration: none;
+    color: #1161ee;
+}
+
+.float {
+    float: right;
+    padding-left: 110px;
+}
+
+.center {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.menu {
+    width: 45%;
+    float: left;
+}
+
+.cent {
+    align-items: center;
+    /* display: flex; */
+    align-content: stretch;
+    /* flex-wrap: nowrap; */
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.main {
+    width: 55%;
+    float: left;
+}
+
+.full {
+    /* height: 573px; */
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.panel {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+}
+
+.bg-panel {
+    background-image: url(/src/wall.png);
+    background-size: cover;
+    background-position: center right;
+    /*   height: 165px; */
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    text-align: left;
+    font-weight: 800;
+}
+
+p {
+    font-size: 18px;
+    color: #AFB8C0;
+    text-align: left;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.login-form {
+    min-height: 345px;
+    position: relative;
+    /* perspective: 1000px; */
+    transform-style: preserve-3d;
+}
+
+.login-form .group {
+    margin-bottom: 30px;
+}
+
+.label {
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button {
+    width: 100%;
+    display: block;
+}
+
+.login-form .group .input,
+.login-form .group .button {
+    border: 2px solid #f7f7f7;
+    box-shadow: 0 2px 15px 0 rgb(120 135 182 / 27%);
+    padding: 15px 5px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+/*   input:focus-visible{
+    color: #1161ee;
+  } */
+
+
+/* ////// RESPONSIVE ///// */
+
+@media (max-width: 1199.98px) {
+    .full .menu {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .main {
+        width: 100%;
+        height: auto;
+    }
+    .bg-panel {
+        display: none;
+    }
+    h1,
+    h2,
+    h3,
+    p {
+        text-align: center!important;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 30px!important;
+    }
+    p {
+        font-size: 13px!important;
+    }
+    .card {
+        padding: 5px!important;
+    }
+    .content {
+        padding: 20px!important;
+    }
+    .float {
+        float: right;
+        padding-left: 40px;
+    }
+}
