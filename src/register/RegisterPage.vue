@@ -13,9 +13,9 @@
           <p>Acesse sua conta Aires por algum método abaixo</p>
 
           <form @submit.prevent="handleSubmit">
-           <!--  <div class="group"> -->
-              <!-- <label for="firstName" class="label">Nome</label> -->
-              <!--               <input
+            <div class="group"> 
+               <label for="firstName" class="label">Nome</label>
+                <input
                 type="text"
                 v-model="user.firstName"
                 v-validate="'required'"
@@ -24,8 +24,9 @@
                 autocomplete="off"
                 class="input"
                 :class="{ 'is-invalid': submitted && errors.has('firstName') }"
-              /> -->
-            <!--             <div class="group">
+              />
+            </div>
+            <div class="group">
               <label for="lastName" class="label">Sobrenome</label>
               <input
                 type="text"
@@ -43,28 +44,9 @@
               >
                 {{ errors.first("lastName") }}
               </div>
-            </div> -->
-<!--             <div class="group">
-              <label for="username" class="label">Nome de usuário</label>
-              <input
-                type="text"
-                v-model="user.username"
-                v-validate="'required'"
-                name="username"
-                placeholder="Nome de usuário"
-                autocomplete="off"
-                class="input"
-                :class="{ 'is-invalid': submitted && errors.has('username') }"
-              />
-              <div
-                v-if="submitted && errors.has('username')"
-                class="invalid-feedback"
-              >
-                {{ errors.first("username") }}
-              </div>
-            </div> -->
+            </div>
             <div class="group">
-              <label for="username" class="label">Email</label>
+              <label for="username" class="label">Nome de usuário</label>
               <input
                 type="text"
                 v-model="user.username"
@@ -102,25 +84,6 @@
               </div>
             </div>
             <div class="group">
-              <label htmlFor="password2" class="label">Confirme sua Senha</label>
-              <input
-                type="password"
-                v-model="user.password2"
-                v-validate="{ required: true, min: 6 }"
-                name="password2"
-                placeholder="Senha"
-                autocomplete="off"
-                class="input"
-                :class="{ 'is-invalid': submitted && errors.has('password2') }"
-              />
-              <div
-                v-if="submitted && errors.has('password2')"
-                class="invalid-feedback"
-              >
-                {{ errors.first("password2") }}
-              </div>
-            </div>
-            <div class="group">
               <button class="btn" :disabled="status.registering">
                 Criar conta
               </button>
@@ -150,16 +113,14 @@
 
 <script>
 import { mapState, mapActions } from "vuex";
-
 export default {
   data() {
     return {
       user: {
-        /* firstName: "", */
-        /* lastName: "", */
+        firstName: "",
+        lastName: "",
         username: "",
         password: "",
-        password2: "",
       },
       submitted: false,
     };

@@ -24,9 +24,8 @@ export function configureFakeBackend() {
                         let responseJson = {
                             id: user.id,
                             username: user.username,
-                            /* ATIVAR NOME EM REGISTRO (OPCIONAL)  
                             firstName: user.firstName,
-                             lastName: user.lastName, */
+                            lastName: user.lastName,
                             token: 'fake-jwt-token'
                         };
                         resolve({ ok: true, text: () => Promise.resolve(JSON.stringify(responseJson)) });
