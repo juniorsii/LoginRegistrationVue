@@ -1,3 +1,3 @@
-# Aires Login Vue
+# Login and Registration Vue
 
-Vue + Vuex - User Registration and Login
+Vue - User Registration and Login
